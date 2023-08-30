@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Shard.Database
+﻿namespace Shard.Database
 {
     public class Beatmap
     {
@@ -23,7 +17,7 @@ namespace Shard.Database
         // from filename
         public string Artist { get; set; }
         public string Title { get; set; }
-        public string Mapper {  get; set; }
+        public string Mapper { get; set; }
         public string Difficulty { get; set; }
 
         // filepath

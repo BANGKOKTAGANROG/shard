@@ -1,10 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Sqlite.Query.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace Shard.Database
 {
@@ -55,7 +49,7 @@ namespace Shard.Database
                         difficulty = Regex.Match(sr.ReadLine()!, pattern).Groups[1].Value;
                     }
                 }
-                
+
                 Beatmap beatmap = new(artist, title, mapper, difficulty, filename);
 
                 context.Beatmaps.Add(beatmap);

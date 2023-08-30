@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Newtonsoft.Json;
-using System.Threading.Tasks;
-using System.Xml;
+﻿using Newtonsoft.Json;
 
 namespace Shard.Startup
 {
@@ -45,7 +39,7 @@ namespace Shard.Startup
                         break;
                     }
                 }
-                
+
                 songsFolder = GetFolderPath();
                 Console.WriteLine($"Your choice: {songsFolder}. Is that correct folder? (Y/n)");
 
